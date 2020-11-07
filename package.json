@@ -1,0 +1,24 @@
+{
+  "name": "rulesbotdiscord",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mspencer92/RulesBot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mspencer92/RulesBot/issues"
+  },
+  "homepage": "https://github.com/mspencer92/RulesBot#readme",
+  "dependencies": {
+    "discord.js": "^11.2.0",
+    "dotenv": "^8.2.0",
+    "mongodb": "^3.3.3"
+  }
+}
