@@ -3,7 +3,6 @@ const fs = require('fs');
 const MongoClient = require('mongodb').MongoClient;
 const prettifyRules = require('./prettify');
 
-require('dotenv').config();
 let url = process.env.MONGODB_URI;
 
 const client = new Discord.Client();
@@ -17,7 +16,7 @@ const prefix = "!";
 
 let servers = {
     '298286689514815503': {
-        role: "Semi-Scrubs"
+        role: "Pestilence"
     }, '635940653771128833': {
         role: "Member"
     }, '639635912027930637': {
