@@ -17,10 +17,6 @@ const prefix = "!";
 let servers = {
     '298286689514815503': {
         role: "Pestilence"
-    }, '635940653771128833': {
-        role: "Member"
-    }, '639635912027930637': {
-        role: "Member"
     }
 };
 
@@ -32,7 +28,7 @@ function postRules(serverId) {
             if (err) throw err;
             if (result) {
                 result = result[0];
-                let channel = client.guilds.get(result._id).channels.find(channel => channel.name === "rules");
+                let channel = client.guilds.get(result._id).channels.find(channel => channel.name === "🚫rules🚫");
                 let foundRules = false;
                 let rulesEmbed;
                 let rulesMessage;
@@ -114,7 +110,7 @@ client.on("guildCreate", guild => {
             db.close();
         });
     });
-    if (!guild.channels.find(channel => channel.name === "rules")) {
+    if (!guild.channels.find(channel => channel.name === "🚫rules🚫")) {
         guild.createChannel("rules", {type: "text"}).then(
             (chan) => {
                 chan.overwritePermissions(guild.roles.find('name', '@everyone'), {
