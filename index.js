@@ -127,8 +127,10 @@ client.on('messageReactionAdd', (reaction, user) => {
                     if (embed.title === "These are the server rules, please read and accept them to gain access to the server.") {
                         if (reaction.emoji.name === "✅") {
                             let reactor = reaction.message.guild.member(user);
+							console.log(reactor);
                             let role = reaction.message.guild.roles.find(role => role.name === servers[reaction.message.guild.id]["role"]);
-                            reactor.addRole(role);
+                            console.log(role);
+							reactor.addRole(role);
                         } else if (reaction.emoji.name === "❌") {
                         } else {
                         }
